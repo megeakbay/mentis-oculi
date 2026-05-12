@@ -1,0 +1,300 @@
+{
+  "puzzle_id": 4,
+  "level": 3,
+  "num_cot_images": 3,
+  "num_actions": 3,
+  "seed": 1021,
+  "initial_state_image": "initial.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png",
+    "cot_02.png"
+  ],
+  "cot_reasoning_file": "cot_reasoning.json",
+  "actions": [
+    {
+      "object_id": "blocker_B",
+      "direction": -1,
+      "distance": 3.293
+    },
+    {
+      "object_id": "blocker_A",
+      "direction": -1,
+      "distance": 6.395
+    },
+    {
+      "object_id": "red_car",
+      "direction": 1,
+      "distance": 8.1
+    }
+  ],
+  "solution_length": 3,
+  "cot_steps": [
+    {
+      "step": 0,
+      "step_number": 1,
+      "total_steps": 3,
+      "image": "cot_00.png",
+      "reasoning": "The red rectangle R needs to move forward to reach the green exit, but its path is immediately obstructed by rectangle E. To clear the way for R, E must be moved along its rail. Sliding E backward shifts it out of R's path and into an open area, whereas moving it forward would potentially keep it blocking R or other paths. Therefore, the logical step is to move E backward.",
+      "response": "E backward"
+    },
+    {
+      "step": 1,
+      "step_number": 2,
+      "total_steps": 3,
+      "image": "cot_01.png",
+      "reasoning": "Rectangle R must move forward along its rail to reach the exit, but its path is currently obstructed by rectangle C. To unblock R, rectangle C needs to be moved out of the way. Moving rectangle C backward along its own rail will slide it out of R's path. Since there are no other rectangles blocking C's backward trajectory, this move can be executed immediately.",
+      "response": "C backward"
+    },
+    {
+      "step": 2,
+      "step_number": 3,
+      "total_steps": 3,
+      "image": "cot_02.png",
+      "reasoning": "To reach the green exit, the red rectangle R needs to move along its horizontal rail. Observing the current arrangement, R's entire path to the exit is completely clear; no other rectangles or their rails block its trajectory. Therefore, R can directly move forward to reach the goal.",
+      "response": "R forward"
+    }
+  ],
+  "board": {
+    "width": 10.0,
+    "height": 10.0,
+    "exits": [
+      {
+        "side": "right",
+        "x": 10.0,
+        "y": 4.889696504723481,
+        "w": 0.0,
+        "h": 1.0,
+        "opening_start": 4.889696504723481,
+        "opening_end": 5.889696504723481
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "red_car",
+      "shape": "rectangle",
+      "size": [
+        1.8,
+        0.9
+      ],
+      "pose": {
+        "x": 1.0,
+        "y": 5.389696504723481,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#E85D75",
+      "drive_segment": {
+        "t_min": -0.099609375,
+        "t_max": 8.099609375,
+        "line": [
+          [
+            0.900390625,
+            5.389696504723481
+          ],
+          [
+            9.099609375,
+            5.389696504723481
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_A",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 7.260690904400308,
+        "y": 5.389696504723481,
+        "theta": 0.2617993877991494
+      },
+      "local_axis": [
+        0.9659258262890683,
+        0.25881904510252074
+      ],
+      "movable": true,
+      "color_hex": "#C46A2E",
+      "label": "C",
+      "drive_segment": {
+        "t_min": -1.197265625,
+        "t_max": 1.71484375,
+        "line": [
+          [
+            6.104221116284685,
+            5.079821358926908
+          ],
+          [
+            8.917102770575703,
+            5.833530726598506
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_B",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 3.9437189025730075,
+        "y": 5.389696504723481,
+        "theta": -0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        -0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#C42E88",
+      "label": "E",
+      "drive_segment": {
+        "t_min": -3.29296875,
+        "t_max": 2.326171875,
+        "line": [
+          [
+            1.091924311204719,
+            7.036180879723481
+          ],
+          [
+            5.958242839891888,
+            4.226610567223481
+          ]
+        ]
+      }
+    },
+    {
+      "id": "static_obs_0",
+      "shape": "rectangle",
+      "size": [
+        1.857011143246713,
+        0.8017303986003127
+      ],
+      "pose": {
+        "x": 5.179991030162306,
+        "y": 2.6272359830690357,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": false,
+      "color_hex": "#1B263B"
+    },
+    {
+      "id": "distractor_0",
+      "shape": "rectangle",
+      "size": [
+        2.126424903015844,
+        1.0705012219384418
+      ],
+      "pose": {
+        "x": 4.711585708401413,
+        "y": 7.425272825003951,
+        "theta": 0.2617993877991494
+      },
+      "local_axis": [
+        0.9659258262890683,
+        0.25881904510252074
+      ],
+      "movable": true,
+      "color_hex": "#FFD670",
+      "label": "D",
+      "drive_segment": {
+        "t_min": -3.064453125,
+        "t_max": 4.267578125,
+        "line": [
+          [
+            1.7515512915116709,
+            6.632133993430015
+          ],
+          [
+            8.83374963504519,
+            8.529803320216857
+          ]
+        ]
+      }
+    },
+    {
+      "id": "distractor_1",
+      "shape": "rectangle",
+      "size": [
+        2.2277854720882306,
+        0.9323153685672865
+      ],
+      "pose": {
+        "x": 7.9008108396789245,
+        "y": 3.1980564307057704,
+        "theta": -0.2617993877991494
+      },
+      "local_axis": [
+        0.9659258262890683,
+        -0.25881904510252074
+      ],
+      "movable": true,
+      "color_hex": "#0090C1",
+      "label": "F",
+      "drive_segment": {
+        "t_min": -2.408203125,
+        "t_max": 0.93359375,
+        "line": [
+          [
+            5.574665246291383,
+            3.821345263931177
+          ],
+          [
+            8.802593154065985,
+            2.956424587817089
+          ]
+        ]
+      }
+    },
+    {
+      "id": "distractor_2",
+      "shape": "rectangle",
+      "size": [
+        1.7812228652097841,
+        1.065179504732572
+      ],
+      "pose": {
+        "x": 1.8345231631561298,
+        "y": 2.0028331160225585,
+        "theta": 0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#5A4FCF",
+      "label": "B",
+      "drive_segment": {
+        "t_min": -0.919921875,
+        "t_max": 1.591796875,
+        "line": [
+          [
+            1.0378474499091168,
+            1.5428721785225585
+          ],
+          [
+            3.2130596945708128,
+            2.7987315535225585
+          ]
+        ]
+      }
+    }
+  ],
+  "obviousness_metrics": {
+    "max_margin_px": 8.984375
+  }
+}

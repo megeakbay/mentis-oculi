@@ -1,0 +1,22 @@
+{
+  "puzzle_dir": "hinge-folding/output_sft_500/level_03/puzzle_0001",
+  "ordering": [
+    1,
+    0,
+    2
+  ],
+  "reordered_steps": [
+    {
+      "hinge_id": "B",
+      "angle": 90
+    },
+    {
+      "hinge_id": "A",
+      "angle": 90
+    },
+    {
+      "hinge_id": "C",
+      "angle": 90
+    }
+  ]
+}

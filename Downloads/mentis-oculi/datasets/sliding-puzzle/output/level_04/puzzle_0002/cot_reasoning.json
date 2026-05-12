@@ -1,0 +1,26 @@
+[
+  {
+    "step": 0,
+    "image": "cot_00.png",
+    "move": "left",
+    "reasoning": "The vintage map tile is currently occupying the top-left corner, but the visual layout indicates it belongs on the right side next to the appliance. Moving the blank left shifts the map out of this space, freeing the top-left corner so the upper section of the white appliance can eventually slide upward into its correct position."
+  },
+  {
+    "step": 1,
+    "image": "cot_01.png",
+    "move": "down",
+    "reasoning": "The bottom-left tile displays the upper rounded corner of the white appliance casing, which belongs in the top-left position. Moving the blank space down will slide this corner piece into its correct spot, establishing the top-left anchor of the appliance."
+  },
+  {
+    "step": 2,
+    "image": "cot_02.png",
+    "move": "right",
+    "reasoning": "The bottom-right tile displays the lower vents and frosty grill of the white appliance, which structurally belongs directly beneath the top-left tile. Moving the blank space to the right allows this lower section to slide left into its proper place. This action seamlessly aligns the vertical casing and continuous grill pattern."
+  },
+  {
+    "step": 3,
+    "image": "cot_03.png",
+    "move": "up",
+    "reasoning": "The vintage map tile is currently positioned in the top-right corner, but it needs to be in the bottom-right to properly align beside the lower appliance casing. Moving the blank space upward will slide the map tile down into its correct location, leaving the top-right position for the solid black square."
+  }
+]

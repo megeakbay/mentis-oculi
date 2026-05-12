@@ -1,0 +1,14 @@
+{
+  "puzzle_dir": "form-board/output_sft_500/level_03/puzzle_0001",
+  "shape": "rectangle",
+  "ordering": [
+    2,
+    0,
+    1
+  ],
+  "reordered_labels": [
+    "E",
+    "B",
+    "D"
+  ]
+}

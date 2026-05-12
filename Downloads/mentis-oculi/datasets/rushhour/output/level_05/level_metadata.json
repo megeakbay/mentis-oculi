@@ -1,0 +1,8 @@
+{
+  "level": 5,
+  "num_cot_images": 5,
+  "num_actions": 5,
+  "instances_generated": 5,
+  "instances_requested": 5,
+  "chance_performance": 0.0004
+}

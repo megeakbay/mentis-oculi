@@ -1,0 +1,42 @@
+[
+  {
+    "step": 0,
+    "step_number": 1,
+    "total_steps": 5,
+    "image": "cot_00.png",
+    "reasoning": "To allow the red rectangle R to move forward to the exit, rectangle C must be cleared from its path. Moving C backward is obstructed by the black block, so C must move forward. This action also unblocks the forward path for rectangle B, which is also currently blocking R and will eventually need to be moved.",
+    "response": "C forward"
+  },
+  {
+    "step": 1,
+    "step_number": 2,
+    "total_steps": 5,
+    "image": "cot_01.png",
+    "reasoning": "The red rectangle R is blocked by B. To clear the path for R, B must move backward. However, B's backward path is blocked by F. To allow B to move backward, F needs to move forward. F's forward path is currently blocked by A. Therefore, A must move forward to make room for F.",
+    "response": "A forward"
+  },
+  {
+    "step": 2,
+    "step_number": 3,
+    "total_steps": 5,
+    "image": "cot_02.png",
+    "reasoning": "The red rectangle R needs to move forward to reach its exit. Its path is currently blocked by rectangle B. To clear the way for R, B needs to move backward along its rail. However, B's backward path is obstructed by rectangle F. Since F is blocked from moving backward by the black unlabelled rectangle, F must move forward to open the path for B.",
+    "response": "F forward"
+  },
+  {
+    "step": 3,
+    "step_number": 4,
+    "total_steps": 5,
+    "image": "cot_03.png",
+    "reasoning": "The primary objective is to move the red rectangle, R, forward along its rail towards the exit. Currently, the path for R is directly obstructed by the purple rectangle, B. To allow R to proceed, B must be moved out of the way. Sliding B backward along its designated rail shifts it completely off R's trajectory, effectively clearing the path.",
+    "response": "B backward"
+  },
+  {
+    "step": 4,
+    "step_number": 5,
+    "total_steps": 5,
+    "image": "cot_04.png",
+    "reasoning": "The rail path for the red rectangle (R) leading to the green exit is completely clear of any obstacles. Since no other rectangles intersect or block its trajectory, R can directly move forward into the exit to solve the puzzle.",
+    "response": "R forward"
+  }
+]

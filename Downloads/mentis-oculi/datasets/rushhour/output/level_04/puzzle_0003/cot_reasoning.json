@@ -1,0 +1,34 @@
+[
+  {
+    "step": 0,
+    "step_number": 1,
+    "total_steps": 4,
+    "image": "cot_00.png",
+    "reasoning": "The red rectangle (R) needs to move backward to reach the green exit at the bottom. Currently, rectangle B is positioned directly across R's vertical path. To clear this obstruction, rectangle B must move backward along its rail, sliding out of the way so R can pass.",
+    "response": "B backward"
+  },
+  {
+    "step": 1,
+    "step_number": 2,
+    "total_steps": 4,
+    "image": "cot_01.png",
+    "reasoning": "To reach the exit, the red rectangle R must move backward along its rail, but its path is currently blocked by C. To clear the way for R, C needs to move forward. However, C's forward path is blocked by A. Therefore, A must move forward along its own rail to unblock C.",
+    "response": "A forward"
+  },
+  {
+    "step": 2,
+    "step_number": 3,
+    "total_steps": 4,
+    "image": "cot_02.png",
+    "reasoning": "The red rectangle (R) needs to move backward to reach the green exit. Its vertical path is currently blocked by rectangle C. Moving C forward along its rail pulls its back end off of R's path, clearing the way for R to proceed.",
+    "response": "C forward"
+  },
+  {
+    "step": 3,
+    "step_number": 4,
+    "total_steps": 4,
+    "image": "cot_03.png",
+    "reasoning": "The red rectangle R is located at one end of its rail, while the green exit is at the opposite end. By examining the full length of R's path, we can see that no other rectangles or obstacles are currently blocking its way. Since R's directional arrow points away from the exit, it simply needs to move backward along its rail to reach the goal.",
+    "response": "R backward"
+  }
+]

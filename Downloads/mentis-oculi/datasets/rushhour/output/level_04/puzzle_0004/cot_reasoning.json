@@ -1,0 +1,34 @@
+[
+  {
+    "step": 0,
+    "step_number": 1,
+    "total_steps": 4,
+    "image": "cot_00.png",
+    "reasoning": "The red rectangle (R) needs to move forward along its rail to reach the exit. Rectangle B currently intersects R's forward path. Moving B forward along its own rail would slide it further into R's path, creating a larger obstruction. Therefore, B must move backward to pull completely out of R's path.",
+    "response": "B backward"
+  },
+  {
+    "step": 1,
+    "step_number": 2,
+    "total_steps": 4,
+    "image": "cot_01.png",
+    "reasoning": "The red rectangle (R) is blocked from moving forward to the exit by E. To clear the path for R, E must move backward. However, E's backward trajectory is currently obstructed by F. Therefore, F must move backward to vacate the space, allowing E to move backward and ultimately clear the way for R.",
+    "response": "F backward"
+  },
+  {
+    "step": 2,
+    "step_number": 3,
+    "total_steps": 4,
+    "image": "cot_02.png",
+    "reasoning": "The red rectangle (R) needs to move forward to reach the exit, but its path is directly blocked by the yellow rectangle (E). To clear the way for R, E must be moved. Moving E backward along its rail takes it out of R's path and into the open space towards the cyan rectangle (F), thereby unblocking the intersection for R.",
+    "response": "E backward"
+  },
+  {
+    "step": 3,
+    "step_number": 4,
+    "total_steps": 4,
+    "image": "cot_03.png",
+    "reasoning": "Looking at the current state, the projected path of the red rectangle (R) toward the green exit is entirely clear. None of the other rectangles' current positions overlap with R's forward trajectory. Since there are no obstacles blocking its way, R can proceed directly to the exit.",
+    "response": "R forward"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "step": 0,
+    "step_number": 1,
+    "total_steps": 5,
+    "image": "cot_00.png",
+    "reasoning": "Rectangle A is currently blocking the path of the red rectangle (R) to the exit. To clear this path, A must move out of the way. Tracing A's rail shows that if A were to move backward, it would collide with rectangle F, which is obstructing its backward trajectory. Therefore, A must move forward along its rail to successfully shift out of R's direct path.",
+    "response": "A forward"
+  },
+  {
+    "step": 1,
+    "step_number": 2,
+    "total_steps": 5,
+    "image": "cot_01.png",
+    "reasoning": "The red rectangle (R) is blocked from moving forward to the exit by F. To clear R's path, F needs to move forward along its rail. However, F is currently blocked from moving forward by D. Therefore, D must move backward along its rail to unblock F.",
+    "response": "D backward"
+  },
+  {
+    "step": 2,
+    "step_number": 3,
+    "total_steps": 5,
+    "image": "cot_02.png",
+    "reasoning": "The red rectangle R's forward path to the exit is directly obstructed by rectangle F. To unblock R, rectangle F must move forward along its rail into the available open space, as its backward path is limited by the wall and would not sufficiently clear the way.",
+    "response": "F forward"
+  },
+  {
+    "step": 3,
+    "step_number": 4,
+    "total_steps": 5,
+    "image": "cot_03.png",
+    "reasoning": "The red rectangle R's path to the green exit is blocked by rectangle A. To clear the way, A must slide along its rail. Moving A backward shifts it out of the intersection with R's path, opening the route for R to reach the exit.",
+    "response": "A backward"
+  },
+  {
+    "step": 4,
+    "step_number": 5,
+    "total_steps": 5,
+    "image": "cot_04.png",
+    "reasoning": "The path along R's rail toward the green exit is completely clear. No other rectangles or obstacles are blocking its trajectory. Therefore, R can directly move forward to reach its destination.",
+    "response": "R forward"
+  }
+]

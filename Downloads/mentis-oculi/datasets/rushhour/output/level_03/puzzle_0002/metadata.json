@@ -1,0 +1,266 @@
+{
+  "puzzle_id": 2,
+  "level": 3,
+  "num_cot_images": 3,
+  "num_actions": 3,
+  "seed": 1016,
+  "initial_state_image": "initial.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png",
+    "cot_02.png"
+  ],
+  "cot_reasoning_file": "cot_reasoning.json",
+  "actions": [
+    {
+      "object_id": "blocker_A",
+      "direction": -1,
+      "distance": 2.215
+    },
+    {
+      "object_id": "blocker_B",
+      "direction": -1,
+      "distance": 5.377
+    },
+    {
+      "object_id": "red_car",
+      "direction": 1,
+      "distance": 8.1
+    }
+  ],
+  "solution_length": 3,
+  "cot_steps": [
+    {
+      "step": 0,
+      "step_number": 1,
+      "total_steps": 3,
+      "image": "cot_00.png",
+      "reasoning": "The red rectangle (R) needs to move forward along its rail to reach the green exit. Currently, its path is blocked by the brown rectangle (E). To clear the path for R, E must be moved out of the way. By moving E backward along its own rail, it shifts away from R's trajectory, successfully unblocking that section of the path.",
+      "response": "E backward"
+    },
+    {
+      "step": 1,
+      "step_number": 2,
+      "total_steps": 3,
+      "image": "cot_01.png",
+      "reasoning": "The primary objective is for the red block 'R' to move forward along its rail to reach the green exit. However, its path is currently obstructed by the blue block 'C', which lies directly across the intersection. To clear the way for 'R', 'C' must be moved out of the path. Sliding 'C' backward along its own rail moves it safely out of the intersection, ensuring an unobstructed route for 'R' to proceed.",
+      "response": "C backward"
+    },
+    {
+      "step": 2,
+      "step_number": 3,
+      "total_steps": 3,
+      "image": "cot_02.png",
+      "reasoning": "The objective is to move the red rectangle (R) to the green exit. Observing the rail extending forward from R, there are no other rectangles intersecting its path. Since the route is completely unobstructed, R can directly move forward to the exit.",
+      "response": "R forward"
+    }
+  ],
+  "board": {
+    "width": 10.0,
+    "height": 10.0,
+    "exits": [
+      {
+        "side": "top",
+        "x": 5.877286138703658,
+        "y": 10.0,
+        "w": 1.0,
+        "h": 0.0,
+        "opening_start": 5.877286138703658,
+        "opening_end": 6.877286138703658
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "red_car",
+      "shape": "rectangle",
+      "size": [
+        1.8,
+        0.9
+      ],
+      "pose": {
+        "x": 6.377286138703658,
+        "y": 1.0,
+        "theta": 1.5707963267948966
+      },
+      "local_axis": [
+        6.123233995736766e-17,
+        1.0
+      ],
+      "movable": true,
+      "color_hex": "#E85D75",
+      "drive_segment": {
+        "t_min": -0.099609375,
+        "t_max": 8.099609375,
+        "line": [
+          [
+            6.377286138703658,
+            0.900390625
+          ],
+          [
+            6.377286138703659,
+            9.099609375
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_A",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 6.377286138703658,
+        "y": 5.459902992556424,
+        "theta": 0.2617993877991494
+      },
+      "local_axis": [
+        0.9659258262890683,
+        0.25881904510252074
+      ],
+      "movable": true,
+      "color_hex": "#C46A2E",
+      "label": "E",
+      "drive_segment": {
+        "t_min": -2.21484375,
+        "t_max": 2.62890625,
+        "line": [
+          [
+            4.237911359383729,
+            4.8866592481301385
+          ],
+          [
+            8.916614580471403,
+            6.140313997845473
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_B",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 6.377286138703658,
+        "y": 7.618565327985461,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#0090C1",
+      "label": "C",
+      "drive_segment": {
+        "t_min": -5.376953125,
+        "t_max": 2.62109375,
+        "line": [
+          [
+            1.0003330137036581,
+            7.618565327985461
+          ],
+          [
+            8.998379888703658,
+            7.618565327985461
+          ]
+        ]
+      }
+    },
+    {
+      "id": "static_obs_0",
+      "shape": "rectangle",
+      "size": [
+        1.8803173321029876,
+        0.8723860344626959
+      ],
+      "pose": {
+        "x": 3.7438698097316916,
+        "y": 6.57312266746891,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": false,
+      "color_hex": "#1B263B"
+    },
+    {
+      "id": "distractor_0",
+      "shape": "rectangle",
+      "size": [
+        2.291122074075637,
+        0.9622471826172525
+      ],
+      "pose": {
+        "x": 3.4480922182225395,
+        "y": 3.3438286184143036,
+        "theta": 0.2617993877991494
+      },
+      "local_axis": [
+        0.9659258262890683,
+        0.25881904510252074
+      ],
+      "movable": true,
+      "color_hex": "#FFD670",
+      "label": "D",
+      "drive_segment": {
+        "t_min": -2.294921875,
+        "t_max": 5.5078125,
+        "line": [
+          [
+            1.2313679098443067,
+            2.749859130141917
+          ],
+          [
+            8.768230558330298,
+            4.769355390268031
+          ]
+        ]
+      }
+    },
+    {
+      "id": "distractor_1",
+      "shape": "rectangle",
+      "size": [
+        1.8387013432324926,
+        1.037634246923487
+      ],
+      "pose": {
+        "x": 2.235098177779334,
+        "y": 5.154120697196495,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#2EC4B6",
+      "label": "A",
+      "drive_segment": {
+        "t_min": -1.314453125,
+        "t_max": 2.138671875,
+        "line": [
+          [
+            0.9206450527793342,
+            5.154120697196495
+          ],
+          [
+            4.373770052779334,
+            5.154120697196495
+          ]
+        ]
+      }
+    }
+  ],
+  "obviousness_metrics": {
+    "max_margin_px": 9.375
+  }
+}

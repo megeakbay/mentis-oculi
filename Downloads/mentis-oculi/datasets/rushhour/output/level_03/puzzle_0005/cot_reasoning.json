@@ -1,0 +1,26 @@
+[
+  {
+    "step": 0,
+    "step_number": 1,
+    "total_steps": 3,
+    "image": "cot_00.png",
+    "reasoning": "The red rectangle (R) needs to move backward to reach the exit. Its path is currently blocked by C. To clear the way, C must move backward along its rail. However, C's backward path is blocked by D. Therefore, D must move backward first to unblock C.",
+    "response": "D backward"
+  },
+  {
+    "step": 1,
+    "step_number": 2,
+    "total_steps": 3,
+    "image": "cot_01.png",
+    "reasoning": "The red rectangle R needs to move backward along its rail to reach the green exit, but its path is currently blocked by rectangle C. To clear the way, rectangle C must move backward along its own rail, which slides it entirely out of R's path.",
+    "response": "C backward"
+  },
+  {
+    "step": 2,
+    "step_number": 3,
+    "total_steps": 3,
+    "image": "cot_02.png",
+    "reasoning": "The path for the red rectangle (R) to the green exit is completely unobstructed. With no other rectangles blocking its trajectory, R can move directly backward along its rail to reach the exit.",
+    "response": "R backward"
+  }
+]

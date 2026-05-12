@@ -1,0 +1,27 @@
+{
+  "puzzle_dir": "rushhour/output/level_04/puzzle_0004",
+  "ordering": [
+    2,
+    0,
+    1,
+    3
+  ],
+  "actions": [
+    {
+      "object_id": "blocker_A",
+      "direction": -1
+    },
+    {
+      "object_id": "blocker_B",
+      "direction": -1
+    },
+    {
+      "object_id": "distractor_1",
+      "direction": -1
+    },
+    {
+      "object_id": "red_car",
+      "direction": 1
+    }
+  ]
+}

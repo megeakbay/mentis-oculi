@@ -1,0 +1,26 @@
+[
+  {
+    "step": 0,
+    "image": "cot_00.png",
+    "move": "up",
+    "reasoning": "The front end of the metal knife currently in the top-right position actually belongs in the bottom-left corner. By moving the blank space up, this knife tile is pulled down into the bottom-right. This initiates a counter-clockwise rotation that will clear the way for the onion skins to shift into the top-right and the dark clothing to slide up into the top-left."
+  },
+  {
+    "step": 1,
+    "image": "cot_01.png",
+    "move": "left",
+    "reasoning": "The blank tile is currently in the top-right position. Moving the blank to the left slides the tile with the crinkled onion skins and the top edge of the knife into its correct top-right location. This accurately positions the upper portion of the knife where it belongs and clears the top-left corner to eventually receive its proper tile."
+  },
+  {
+    "step": 2,
+    "image": "cot_02.png",
+    "move": "down",
+    "reasoning": "The tile containing the dark clothing and chopped leeks is currently in the bottom-left position. According to the solved layout, this tile belongs in the top-left corner. By moving the blank space down, this tile will slide upward into its correct spot."
+  },
+  {
+    "step": 3,
+    "image": "cot_03.png",
+    "move": "right",
+    "reasoning": "The tile displaying the front end of the metal knife resting on the wooden surface is currently located in the bottom-right corner. According to the target layout, this piece belongs in the bottom-left position to correctly form the knife's shape. Moving the blank space right will slide this tile left into its correct alignment beneath the rest of the scene."
+  }
+]

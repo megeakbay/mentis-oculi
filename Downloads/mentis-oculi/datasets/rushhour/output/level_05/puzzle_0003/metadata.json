@@ -1,0 +1,328 @@
+{
+  "puzzle_id": 3,
+  "level": 5,
+  "num_cot_images": 5,
+  "num_actions": 5,
+  "seed": 1045,
+  "initial_state_image": "initial.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png",
+    "cot_02.png",
+    "cot_03.png",
+    "cot_04.png"
+  ],
+  "cot_reasoning_file": "cot_reasoning.json",
+  "actions": [
+    {
+      "object_id": "distractor_1",
+      "direction": -1,
+      "distance": 3.002
+    },
+    {
+      "object_id": "blocker_B",
+      "direction": -1,
+      "distance": 4.486
+    },
+    {
+      "object_id": "distractor_2",
+      "direction": -1,
+      "distance": 6.25
+    },
+    {
+      "object_id": "blocker_A",
+      "direction": 1,
+      "distance": 7.408
+    },
+    {
+      "object_id": "red_car",
+      "direction": -1,
+      "distance": 8.1
+    }
+  ],
+  "solution_length": 5,
+  "cot_steps": [
+    {
+      "step": 0,
+      "step_number": 1,
+      "total_steps": 5,
+      "image": "cot_00.png",
+      "reasoning": "The red block R must move backward along its rail to reach the exit. Its path is currently obstructed by block D. To clear the way, block D needs to move backward, as moving forward would cause it to collide with block A. However, block D cannot move backward because block B is blocking its path on the same rail. Therefore, block B must move backward to create the necessary space for block D to retreat.",
+      "response": "B backward"
+    },
+    {
+      "step": 1,
+      "step_number": 2,
+      "total_steps": 5,
+      "image": "cot_01.png",
+      "reasoning": "The red rectangle (R) needs to move backward along its rail to reach the exit. Currently, D is blocking this path. By moving D backward along its own rail, it moves out of the way and clears the path for R.",
+      "response": "D backward"
+    },
+    {
+      "step": 2,
+      "step_number": 3,
+      "total_steps": 5,
+      "image": "cot_02.png",
+      "reasoning": "The red rectangle R needs to move backward to reach the green exit. Rectangle F is currently blocking R's path. To get out of the way, F must move forward along its rail. However, F's forward movement is blocked by rectangle A. Therefore, rectangle A must move backward to clear the intersection so F can eventually proceed forward.",
+      "response": "A backward"
+    },
+    {
+      "step": 3,
+      "step_number": 4,
+      "total_steps": 5,
+      "image": "cot_03.png",
+      "reasoning": "The red rectangle R needs to move backward along its rail to reach the green exit. Its path is currently blocked by rectangle F. To clear the way for R, rectangle F must move forward along its rail.",
+      "response": "F forward"
+    },
+    {
+      "step": 4,
+      "step_number": 5,
+      "total_steps": 5,
+      "image": "cot_04.png",
+      "reasoning": "The objective is for the red rectangle (R) to enter the green exit. Evaluating its path backward along its rail shows that there are no other rectangles intersecting this route. With the path completely clear of obstacles, R can move backward to reach the exit.",
+      "response": "R backward"
+    }
+  ],
+  "board": {
+    "width": 10.0,
+    "height": 10.0,
+    "exits": [
+      {
+        "side": "left",
+        "x": 0.0,
+        "y": 5.712608441646363,
+        "w": 0.0,
+        "h": 1.0,
+        "opening_start": 5.712608441646363,
+        "opening_end": 6.712608441646363
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "red_car",
+      "shape": "rectangle",
+      "size": [
+        1.8,
+        0.9
+      ],
+      "pose": {
+        "x": 9.0,
+        "y": 6.212608441646363,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#E85D75",
+      "drive_segment": {
+        "t_min": -8.099609375,
+        "t_max": 0.099609375,
+        "line": [
+          [
+            0.900390625,
+            6.212608441646363
+          ],
+          [
+            9.099609375,
+            6.212608441646363
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_A",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 1.7604431305649033,
+        "y": 6.212608441646363,
+        "theta": 0.2617993877991494
+      },
+      "local_axis": [
+        0.9659258262890683,
+        0.25881904510252074
+      ],
+      "movable": true,
+      "color_hex": "#C42E88",
+      "label": "F",
+      "drive_segment": {
+        "t_min": -0.701171875,
+        "t_max": 3.716796875,
+        "line": [
+          [
+            1.083163107834873,
+            6.031131806506119
+          ],
+          [
+            5.350593223197905,
+            7.174586259673896
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_B",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 6.923971385741522,
+        "y": 6.212608441646363,
+        "theta": 0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#2EC4B6",
+      "label": "D",
+      "drive_segment": {
+        "t_min": -1.484375,
+        "t_max": 0.09765625,
+        "line": [
+          [
+            5.638464926998996,
+            5.470420941646363
+          ],
+          [
+            7.008544179079847,
+            6.261436566646363
+          ]
+        ]
+      }
+    },
+    {
+      "id": "static_obs_0",
+      "shape": "rectangle",
+      "size": [
+        2.265456821091365,
+        0.9794015879142488
+      ],
+      "pose": {
+        "x": 6.763041804402109,
+        "y": 3.74516256844024,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": false,
+      "color_hex": "#1B263B"
+    },
+    {
+      "id": "distractor_0",
+      "shape": "rectangle",
+      "size": [
+        2.1033267346683004,
+        1.0072412939821764
+      ],
+      "pose": {
+        "x": 5.315708182337948,
+        "y": 1.9975813535069395,
+        "theta": -0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        -0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#FFD670",
+      "label": "E",
+      "drive_segment": {
+        "t_min": -1.3671875,
+        "t_max": 2.0703125,
+        "line": [
+          [
+            4.131689075601411,
+            2.6811751035069395
+          ],
+          [
+            7.108651401110419,
+            0.9624251035069398
+          ]
+        ]
+      }
+    },
+    {
+      "id": "distractor_1",
+      "shape": "rectangle",
+      "size": [
+        2.251259036474427,
+        0.9410950773343083
+      ],
+      "pose": {
+        "x": 3.811428048756854,
+        "y": 4.382355489317143,
+        "theta": 0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#C46A2E",
+      "label": "B",
+      "drive_segment": {
+        "t_min": -3.001953125,
+        "t_max": 1.484375,
+        "line": [
+          [
+            1.2116603815367712,
+            2.881378926817143
+          ],
+          [
+            5.09693450749938,
+            5.124542989317143
+          ]
+        ]
+      }
+    },
+    {
+      "id": "distractor_2",
+      "shape": "rectangle",
+      "size": [
+        2.3072775200975473,
+        1.0707118414117494
+      ],
+      "pose": {
+        "x": 7.404959858658526,
+        "y": 8.217289849354657,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#5A4FCF",
+      "label": "A",
+      "drive_segment": {
+        "t_min": -6.25,
+        "t_max": 1.439453125,
+        "line": [
+          [
+            1.1549598586585264,
+            8.217289849354657
+          ],
+          [
+            8.844412983658525,
+            8.217289849354657
+          ]
+        ]
+      }
+    }
+  ],
+  "obviousness_metrics": {
+    "max_margin_px": 15.234375
+  }
+}

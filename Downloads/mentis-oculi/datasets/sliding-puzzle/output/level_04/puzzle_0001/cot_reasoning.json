@@ -1,0 +1,26 @@
+[
+  {
+    "step": 0,
+    "image": "cot_00.png",
+    "move": "down",
+    "reasoning": "The bottom-left tile features a dark rod with a diagonally descending chain, which belongs in the top-right corner of the solved puzzle. Moving the blank space down allows this tile to slide upward into the top row. This initiates a clockwise rotation that will progressively shift all pieces into their correct final positions."
+  },
+  {
+    "step": 1,
+    "image": "cot_01.png",
+    "move": "right",
+    "reasoning": "The blank space is currently in the bottom-left corner. The tile in the bottom-right corner displays a hand gripping a dark vertical bar, which is the correct piece for the bottom-left position. Moving the blank right allows this tile to slide left into its proper place."
+  },
+  {
+    "step": 2,
+    "image": "cot_02.png",
+    "move": "up",
+    "reasoning": "The tile in the top-right corner displays fingers wearing a metal ring attached to a hanging chain, which belongs in the bottom-right corner. Moving the blank space up allows this tile to slide down, aligning the fingers with the rest of the hand in the bottom-left tile to correctly restore the lower half of the image."
+  },
+  {
+    "step": 3,
+    "image": "cot_03.png",
+    "move": "left",
+    "reasoning": "The top-left tile shows the upper section of a vertical rod and a diagonal chain, which needs to connect to the metal ring worn on the finger in the bottom-right tile. Moving the blank space left will slide this chain piece into the top-right position, properly aligning the chain with the ring below and positioning the blank in its correct top-left spot."
+  }
+]

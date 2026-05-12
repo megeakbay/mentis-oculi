@@ -1,0 +1,83 @@
+{
+  "puzzle_id": 1,
+  "level": 1,
+  "num_cot_images": 1,
+  "num_actions": 1,
+  "seed": 1000,
+  "initial_state_image": "initial.png",
+  "cot_images": [
+    "cot_00.png"
+  ],
+  "cot_reasoning_file": "cot_reasoning.json",
+  "actions": [
+    {
+      "object_id": "red_car",
+      "direction": -1,
+      "distance": 8.1
+    }
+  ],
+  "solution_length": 1,
+  "cot_steps": [
+    {
+      "step": 0,
+      "step_number": 1,
+      "total_steps": 1,
+      "image": "cot_00.png",
+      "reasoning": "The red rectangle R has a clear, unobstructed path to the green exit. Since its rail arrow points directly away from the exit, R must move backward along its rail to reach the goal.",
+      "response": "R backward"
+    }
+  ],
+  "board": {
+    "width": 10.0,
+    "height": 10.0,
+    "exits": [
+      {
+        "side": "bottom",
+        "x": 5.518953357355498,
+        "y": 0.0,
+        "w": 1.0,
+        "h": 0.0,
+        "opening_start": 5.518953357355498,
+        "opening_end": 6.518953357355498
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "red_car",
+      "shape": "rectangle",
+      "size": [
+        1.8,
+        0.9
+      ],
+      "pose": {
+        "x": 6.018953357355498,
+        "y": 9.0,
+        "theta": 1.5707963267948966
+      },
+      "local_axis": [
+        6.123233995736766e-17,
+        1.0
+      ],
+      "movable": true,
+      "color_hex": "#E85D75",
+      "drive_segment": {
+        "t_min": -8.099609375,
+        "t_max": 0.099609375,
+        "line": [
+          [
+            6.018953357355497,
+            0.900390625
+          ],
+          [
+            6.018953357355498,
+            9.099609375
+          ]
+        ]
+      }
+    }
+  ],
+  "obviousness_metrics": {
+    "max_margin_px": 41.796875
+  }
+}

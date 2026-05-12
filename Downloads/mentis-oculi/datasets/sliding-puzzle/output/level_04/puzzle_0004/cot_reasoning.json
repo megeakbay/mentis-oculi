@@ -1,0 +1,26 @@
+[
+  {
+    "step": 0,
+    "image": "cot_00.png",
+    "move": "right",
+    "reasoning": "The bottom-right tile features the upper section of the large brake caliper, which correctly belongs in the top-left corner of the puzzle. Moving the blank space to the right allows this caliper tile to slide left into the bottom-left position. This initiates the necessary sequence to eventually shift the caliper upwards into its proper place."
+  },
+  {
+    "step": 1,
+    "image": "cot_01.png",
+    "move": "up",
+    "reasoning": "The blank space is currently located in the bottom-right position. The tile directly above it in the top-right displays the large central nut and the diamond-plate floor, which belongs in the bottom-right corner of the solved puzzle. Moving the blank up shifts this hub assembly tile downward into its correct final location."
+  },
+  {
+    "step": 2,
+    "image": "cot_02.png",
+    "move": "left",
+    "reasoning": "The tile currently in the top-left corner displays the upper curve of the slotted brake rotor and the top half of its inner mounting ring. It needs to move to the top-right position to properly align with the lower section of the central hub and rotor located in the bottom-right. Moving the blank left allows this piece to slide right, completing the circular structure of the brake assembly on the right side."
+  },
+  {
+    "step": 3,
+    "image": "cot_03.png",
+    "move": "down",
+    "reasoning": "The blank space is currently located in the top-left corner, and directly below it is the tile displaying the upper section of the large brake caliper. According to the solved layout, this caliper piece belongs in the top-left position to properly align with the rotor curve on the right. Moving the blank down will pull the caliper tile up into its correct place."
+  }
+]

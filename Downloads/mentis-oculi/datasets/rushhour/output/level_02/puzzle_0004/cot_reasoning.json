@@ -1,0 +1,18 @@
+[
+  {
+    "step": 0,
+    "step_number": 1,
+    "total_steps": 2,
+    "image": "cot_00.png",
+    "reasoning": "The red rectangle (R) needs to move backward along its rail to reach the green exit. However, its path is currently blocked by rectangle A. To clear the way for R, rectangle A must move backward along its own rail.",
+    "response": "A backward"
+  },
+  {
+    "step": 1,
+    "step_number": 2,
+    "total_steps": 2,
+    "image": "cot_01.png",
+    "reasoning": "The red rectangle (R) needs to reach the green exit. Its arrow points away from the exit, meaning it must move backward along its rail to get there. Since rectangle A is not blocking the intersection of their paths, R's route is clear, allowing it to move backward directly to the exit.",
+    "response": "R backward"
+  }
+]

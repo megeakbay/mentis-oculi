@@ -1,0 +1,26 @@
+[
+  {
+    "step": 0,
+    "step_number": 1,
+    "total_steps": 3,
+    "image": "cot_00.png",
+    "reasoning": "The red rectangle (R) needs to move forward along its rail to reach the green exit. Currently, its path is blocked by the brown rectangle (E). To clear the path for R, E must be moved out of the way. By moving E backward along its own rail, it shifts away from R's trajectory, successfully unblocking that section of the path.",
+    "response": "E backward"
+  },
+  {
+    "step": 1,
+    "step_number": 2,
+    "total_steps": 3,
+    "image": "cot_01.png",
+    "reasoning": "The primary objective is for the red block 'R' to move forward along its rail to reach the green exit. However, its path is currently obstructed by the blue block 'C', which lies directly across the intersection. To clear the way for 'R', 'C' must be moved out of the path. Sliding 'C' backward along its own rail moves it safely out of the intersection, ensuring an unobstructed route for 'R' to proceed.",
+    "response": "C backward"
+  },
+  {
+    "step": 2,
+    "step_number": 3,
+    "total_steps": 3,
+    "image": "cot_02.png",
+    "reasoning": "The objective is to move the red rectangle (R) to the green exit. Observing the rail extending forward from R, there are no other rectangles intersecting its path. Since the route is completely unobstructed, R can directly move forward to the exit.",
+    "response": "R forward"
+  }
+]
